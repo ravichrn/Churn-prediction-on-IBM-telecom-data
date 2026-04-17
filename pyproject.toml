@@ -1,0 +1,19 @@
+[project]
+name = "churn-telco"
+version = "0.1.0"
+description = "IBM Telco customer churn analysis (Python port of the original SAS notebook)."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.2",
+    "scipy>=1.17.1",
+    "statsmodels>=0.14.6",
+]
+
+[project.scripts]
+churn-telco = "churn_telco.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.4,<0.12.0"]
+build-backend = "uv_build"
